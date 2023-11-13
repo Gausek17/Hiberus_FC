@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Hiberus_FC</string>
+    <string name="estadios">Estadios</string>
+    <string name="minijuego">Minijuego</string>
+    <string name="equipos">Equipos</string>
+    <string name="todo">TODO</string>
+</resources>

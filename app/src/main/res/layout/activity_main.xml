@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.MainActivity">
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@raw/video"/>
+
+    <Button
+        android:id="@+id/stadiumButton"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="70dp"
+        android:backgroundTint="#0B392C"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/estadios"
+        android:textColor="#ECE7E7"
+        android:textColorHighlight="#B11F1F"
+        android:textColorLink="#AC2828"
+        android:textSize="24sp"
+        app:icon="@drawable/stadium"
+        app:iconPadding="0dp"
+        app:iconSize="25dp"
+        app:iconTint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSquads" />
+
+    <Button
+        android:id="@+id/buttonSquads"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="70dp"
+        android:backgroundTint="#0B392C"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/equipos"
+        android:textColor="#ECE7E7"
+        android:textColorHighlight="#B11F1F"
+        android:textColorLink="#AC2828"
+        android:textSize="24sp"
+        app:icon="@drawable/squad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMinigame" />
+
+    <Button
+        android:id="@+id/buttonMinigame"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#0B392C"
+        android:elevation="10dp"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/minijuego"
+        android:textColor="#ECE7E7"
+        android:textColorHighlight="#B11F1F"
+        android:textColorLink="#AC2828"
+        android:textSize="24sp"
+        app:icon="@drawable/minig"
+        app:iconPadding="25dp"
+        app:iconTint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="300dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="55dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menutitle"
+        android:contentDescription="@string/todo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
